@@ -1,0 +1,22 @@
+pipeline{
+    agent any
+    stages{
+        stage('stage1'){
+            steps{
+                echo 'You are welcome Oluwaseun'
+            }
+        }
+        stage('stage2'){
+            steps{
+                echo 'You are welcome to your department'
+            }
+        }
+        stage('stage3'){
+            steps{
+                echo 'hope you enjoy your stay here'
+            }
+        }
+
+    }
+
+}
