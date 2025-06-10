@@ -1,9 +1,13 @@
 pipeline {
     agent any
     stages{
-         stage('git checkout'){
-
-            git 'https://github.com/Seun07/jenkins-project-pipeline.git'
+        stage("GitHub checkout....") {
+            steps {
+                script {
+ 
+                    git branch: 'main', url: 'https://github.com/Seun07/jenkins-project-pipeline.git' 
+                }
+            }
         }
          stage('building image'){
             steps {
