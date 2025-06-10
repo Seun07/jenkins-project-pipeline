@@ -3,7 +3,7 @@ ADD . /app
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --upgrade pip
-RUN pip install -r requirement.txt
+RUN pip install -r requirements.txt
 COPY . .
 EXPOSE 5002
 ENTRYPOINT ["python","app.py"]
